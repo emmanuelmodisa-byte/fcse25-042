@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crimson Oath — Bold African streetwear from Botswana. Shop the Oath, Sacred Heart Tee and more.">
+  <title>Feedback — Crimson Oath</title>
+  <link rel="icon" type="image/png" href="images/Logo no background.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Logo no background.png" alt="Crimson Oath Logo">
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeNav()">Home</a>
+    <a href="shop.html" onclick="closeNav()">Shop</a>
+    <a href="about.html" onclick="closeNav()">About</a>
+    <a href="gallery.html" onclick="closeNav()">Gallery</a>
+    <a href="contact.html" onclick="closeNav()">Contact</a>
+    <a href="feedback.html" class="active" onclick="closeNav()">Feedback</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="contact-hero">
+    <h1>Your <span class="outline-text">Feedback</span></h1>
+    <p>Tell us what you think</p>
+  </div>
+
+  <!-- FEEDBACK FORM -->
+  <div class="order-selection reveal">
+    <h2>Leave a <span class="outline-text">Review</span></h2>
+    <p class="subtitle">Your opinion helps us improve</p>
+
+    <form class="order-form" action="mailto:emmanuelmodisa@gmail.com" method="post" enctype="text/plain">
+
+      <div class="form-group">
+        <label for="fb-name">Your Name</label>
+        <input type="text" id="fb-name" name="Name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fb-email">Email</label>
+        <input type="email" id="fb-email" name="Email" placeholder="your@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="fb-product">Which product did you buy?</label>
+        <select id="fb-product" name="Product">
+          <option value="">Select a product</option>
+          <option value="Sacred Heart Vest">Sacred Heart Vest</option>
+          <option value="Oath Tee">Oath Tee</option>
+          <option value="Sacred Heart Tee">Sacred Heart Tee</option>
+          <option value="Sacred Heart Hoodie">Sacred Heart Hoodie</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fb-rating">Rating</label>
+        <select id="fb-rating" name="Rating" required>
+          <option value="">Rate us</option>
+          <option value="5 Stars">⭐⭐⭐⭐⭐ — Excellent</option>
+          <option value="4 Stars">⭐⭐⭐⭐ — Good</option>
+          <option value="3 Stars">⭐⭐⭐ — Average</option>
+          <option value="2 Stars">⭐⭐ — Poor</option>
+          <option value="1 Star">⭐ — Very Poor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fb-message">Your Review</label>
+        <textarea id="fb-message" name="Review" placeholder="Tell us about your experience..." required></textarea>
+      </div>
+
+      <button type="submit" onclick="confirmFeedback()" class="btn" style="width: 100%;">
+        Submit Feedback
+      </button>
+
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="reveal">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2 class="footer-logo">Crimson Oath</h2>
+        <p>Built for the bold. Streetwear for those who refuse to fit in.</p>
+      </div>
+      <div class="footer-nav">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-nav">
+        <h3>Support</h3>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <a href="https://www.instagram.com/crimson._.oath/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61587190504302" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@crimson.oath0" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Crimson Oath. All rights reserved.</p>
+    </div>
+    <div class="footer-watermark">OATH</div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function confirmFeedback(){
+      alert("Thank you for your feedback! We will contact you soon.");
+    }
+  </script>
+</body>
+</html>
